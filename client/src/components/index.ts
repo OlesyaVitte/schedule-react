@@ -1,8 +1,6 @@
-export { default as NavBar } from './Navbar/Navbar'
-export { default as Button } from './Button/Button'
-export { default as Card } from './Card/Card'
-export { default as InputField } from './InputField/InputField'
-export { default as Toast } from './Toast/Toast'
-export { default as Footer } from './Footer/Footer'
-export { default as Preloader } from './Preloader/Preloder'
-export { default as Select } from './Select/Select'
+export { default as NavBar } from "./app/Navbar/Navbar";
+export { default as Footer } from "./app/Footer/Footer";
+
+export { Button } from "./common/Button/Button";
+export { default as Toast } from "./common/Toast/Toast";
+export { default as Preloader } from "./common/Preloader/Preloder";

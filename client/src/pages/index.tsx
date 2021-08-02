@@ -1,3 +1,13 @@
-export { default as Auth } from './Auth/Auth'
-export {default as Settings} from './Settings/Settings'
-export {default as Todos} from './Todos/Todos'
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { useRouter } from "next/dist/client/router";
+
+import { RootState } from "flux";
+import { withAuthRedirect } from "hoc/authRedirect";
+
+const Home = () => {
+  const router = useRouter();
+
+  return <div>Home</div>;
+};
+export default withAuthRedirect(Home);

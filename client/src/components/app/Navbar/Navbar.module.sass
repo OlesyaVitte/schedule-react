@@ -1,0 +1,74 @@
+.wrapper
+  padding: 10px 20px
+  height: calc(50px - 20px)
+  background: #43b2e6
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.list
+  margin: 0
+  padding: 0
+  display: flex
+  align-items: center
+
+.item
+  margin-right: 10px
+  list-style: none
+  text-transform: uppercase
+  color: #fff
+  cursor: pointer
+
+  &:nth-last-child(1)
+    margin-right: 0
+
+.link
+  color: #fff
+  letter-spacing: 1px
+  transition: all 0.3s ease
+  text-decoration: none
+  transition: all 0.3s ease
+
+  &_active
+    font-weight: bold
+
+.dropdown
+  position: relative
+  display: inline-block
+
+  &:hover &Content
+    display: block
+
+  &Button
+    padding: 12px 16px
+    width: 80px
+    height: 100%
+    font-size: 16px
+    border: none
+    color: #fff
+
+  &Content
+    width: 80px
+    display: none
+    position: absolute
+    background: #43b2e6
+    min-width: 80px
+    z-index: 1
+
+    .dropdownItem
+      cursor: pointer
+
+  &Item
+    width: 100%
+    color: black
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+    color: #fff
+    transition: all 0.3s ease
+
+    &:first-child
+      margin-top: 3px
+
+    &:hover
+      font-weight: bold
